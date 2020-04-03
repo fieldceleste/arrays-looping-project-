@@ -26,20 +26,37 @@
         <div class="col-md-3">
           <h2><img src="img/play.png" id="play"></h2>
 
+          <div class="rules">
+          <h3>Rules:</h3>
+        Ping Pong will count up to your number from <u>1</u> with the following exceptions:
+        <ol>
+          <li>Numbers divisible by 3 become <span class="ping">ping</span></li>
+          <li>Numbers divisible by 5 become <span class="pong">pong</span></li>
+          <li>Numbers divisible by 15 become <span class="pingpong">pingpong</span></li>
+        </ol>
+      </div>
+      <form class="bopform">
+        <div>
+          <strong><u><span class="enter">Enter your number here:</span></u></strong>
+          <input type="number" min="1" id="input-number" placeholder="Positive number only!">
+          <button class="btn btn-success" type="submit">Let's Play!</button>
+          <button id="reload" class="btn btn-danger" type="click">Reset</button>
 
+      </form>
+      <div class="results">
+        <ul id="list">
 
-
-
-
-        <img src="img/rodger.png" alt="photo of mr rodgers" class="rodger">
-
-
-
-        <img src="img/neighborhood.png" alt="photo of neighborhood" class="neighborhood">
+        </ul>
       </div>
 
 
-     
+
+
+        
+      
+      <img src="img/rodger.png" alt="photo of mr rodgers" class="rodger">
+      <img src="img/neighborhood.png" alt="photo of neighborhood" class="neighborhood">
+      </div>
 </body>
 
 </html>
