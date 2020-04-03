@@ -42,9 +42,9 @@ body{
   margin-top:40%;
   
 }
-.col-md-6{
+.about{
   position:fixed;
-  margin-left:80%;
+  margin-left:81%;
   margin-top:-18%; 
   height: 200px;
   width:200px;
@@ -64,5 +64,16 @@ body{
   font-size: 20px;
   font-family:Marker Felt, fantasy;
 }
-
-
+.bopForm{
+  margin-left:400%;
+  margin-top:40%;
+  background:  rgba(240, 33, 33, 0.8);
+  padding:5px;
+  width:600px;
+  grid-auto-rows: minmax(400px, auto);
+  position: relative;
+}
+.enter{
+  font-size:25px;
+  font-family:Marker Felt, fantasy ;
+}
