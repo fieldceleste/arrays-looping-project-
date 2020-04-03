@@ -1,6 +1,9 @@
 body{
   background-color: rgb(255, 208, 0) ;
 }
+.contianer{
+  background-color: rgb(255, 208, 0) ;
+}
 .neighborhood {
   position:fixed;
   bottom:5px;
@@ -37,12 +40,12 @@ body{
   height:150px;
   
 }
-#play{
+/* #play{
   margin-left:500%;
   margin-top:40%;
   
-}
-.about{
+} */
+/* .about{
   position:fixed;
   margin-left:81%;
   margin-top:-18%; 
@@ -62,18 +65,19 @@ body{
   background: rgba(241, 67, 67, 0.5);
   text-align: center;
   font-size: 20px;
-  font-family:Marker Felt, fantasy;
-}
-.bopForm{
+  font-family:Marker Felt, fantasy; */
+/* } */
+/* .bopForm{
   margin-left:400%;
   margin-top:40%;
   background:  rgba(240, 33, 33, 0.8);
   padding:5px;
   width:600px;
   grid-auto-rows: minmax(400px, auto);
-  position: relative;
-}
+  position: relative; */
+/* } */
 .enter{
   font-size:25px;
   font-family:Marker Felt, fantasy ;
+
 }

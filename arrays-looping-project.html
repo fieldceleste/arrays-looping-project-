@@ -10,16 +10,54 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
+      <!--Header-->
       <div class="col-md-4">
-        
-        <h1><img src="img/mr.png" alt="photo of words" class="mr">
-        </h1>
+      <h1><img src="img/mr.png" alt="photo of words" class="mr"></h1>
         <h2><img src="img/bop.png" alt="photo of word" class="bop"></h2>
-      <div>
-        <!---About Box-- -->
-        <div class="col-md-6 about">
+        <div>
+  
+
+            <!-- //!--Form----->
+            <h2><img src="img/play.png" id="play"></h2>
+            <form class="bopForm">
+              <strong><u><span class="enter">Enter your number here:</span></u></strong>
+              <input type="number" min="1" id="input-number" placeholder="Positive number only!">
+              <button class="btn btn-success" type="submit">Let's Play!</button>
+              <button id="reload" class="btn btn-danger" type="click">Reset</button>
+            </form>
+            <!--Results-->
+            <div class="results">
+              <ul id="list"></ul>
+            </div>
+            <!-- <img src="img/rodger.png" alt="photo of mr rodgers" class="rodger">
+            <img src="img/neighborhood.png" alt="photo of neighborhood" class="neighborhood"> -->
+         </div>
+    </div>
+ </div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!---About Box-- -->
+        <!-- <div class="col-md-6 about">
           <p>
             <h3><u>Created By:</u></h3>
           </p>
@@ -28,11 +66,11 @@
           <h3><u>Subject</u></h3>
           <h4>Arrays and Looping</h4>
         </div>
-        <div class="col-md-3">
-          <h2><img src="img/play.png" id="play"></h2>
+        <div class="col-md-3"> -->
+          
 
           <!--Rules Box-->
-          <div class="rules">
+          <!-- <div class="rules">
             <h3>Rules:</h3>
             Ping Pong will count up to your number from <u>1</u> with the following exceptions:
             <ol>
@@ -40,23 +78,4 @@
               <li>Numbers divisible by 5 become <span class="pong">pong</span></li>
               <li>Numbers divisible by 15 become <span class="pingpong">pingpong</span></li>
             </ol>
-          </div>
-
-          <!-- //!--Form----->
-          <form class="bopForm">
-           <strong><u><span class="enter">Enter your number here:</span></u></strong>
-              <input type="number" min="1" id="input-number" placeholder="Positive number only!">
-              <button class="btn btn-success" type="submit">Let's Play!</button>
-              <button id="reload" class="btn btn-danger" type="click">Reset</button>
-          </form>
-          <!--Results-->
-          <div class="results">
-            <ul id="list"></ul>
-          </div>
-          <img src="img/rodger.png" alt="photo of mr rodgers" class="rodger">
-          <img src="img/neighborhood.png" alt="photo of neighborhood" class="neighborhood">
-          </div>
-        </div>
-</body>
-
-</html>
+          </div> -->
