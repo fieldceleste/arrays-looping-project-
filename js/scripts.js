@@ -15,15 +15,15 @@ $(document).ready(function () {
 });
 
 // Business (Backend) Logic  
-var pongGame = function (userInput) {
+var bopGame = function (userInput) {
   var result = [];
   for (var n = 0; n <= userInput; n++) {
-      if (n % 3 === 0 && n % 15 !== 0) {
-          result.push("Ping");
-      } else if (n % 5 === 0 && n % 15 !== 0) {
-          result.push("Pong");
-      } else if (n % 15 === 0) {
-          result.push("Ping-Pong");
+      if (n % 1 === 0 && n % 3 !== 0) {
+          result.push("Beep");
+      } else if (n % 2 === 0 && n % 3 !== 0) {
+          result.push("Bop");
+      } else if (n % 3 === 0) {
+          result.push("Wont you be my neighbor?");
       } else {
           result.push(n);
       }
