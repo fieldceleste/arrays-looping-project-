@@ -5,21 +5,38 @@ body{
   position:fixed;
   bottom:5px;
   left:0;
+  right:0;
+  padding:0;
+  margin:0;
   width: 120%;
   top:60%;
 
 }
 .rodger {
-  position: relative;
-  right:10%;
-  left:30%;
-  margin-top:30%;
-  margin-bottom:-40%;
+  position: fixed;
+  right:5%;
+  left:35%;
+  margin-top:2%;
   margin-left:-40%;
   transform: scaleX(-1);
+  height:700px;
+  width:700px;
   
 }
 .mr{
-  width:300px;
-  height:300px;
+  margin-top:2%;
+  width:400px;
+  height:100px;
+  padding-left:5%;
+}
+.bop{
+  margin-top:3%;
+  margin-left:30%;
+  width:600px;
+  height:150px;
+}
+.col-md-6{
+  margin-left:160%;
+  margin-top:-50%;
+  
 }
