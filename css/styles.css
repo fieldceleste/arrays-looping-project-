@@ -26,7 +26,7 @@ body{
 }
 .mr{
   margin-top:2%;
-  width:500px;
+  width:600px;
   height:100px;
   padding-left:5%;
 
@@ -40,13 +40,13 @@ body{
 } 
 #play{
   margin-left:100%;
-  margin-top:20%;
+  margin-top:10%;
   
 }
 .about{
-  position:fixed;
-  margin-left:81%;
-  margin-top:-18%; 
+  position:absolute;
+  margin-left:190%;
+  margin-top:-45%; 
   height: 200px;
   width:200px;
   background: rgba(241, 67, 67, 0.5);
@@ -56,43 +56,49 @@ body{
 }
 
 .rules {
-  position:fixed;
-  margin-left:70%;
-  margin-top:-10%; 
+  position:absolute;
+  margin-left:180%;
+  margin-top:-20%; 
   height: 400px;
-  width:200px;
+  width:300px;
   background: rgba(241, 67, 67, 0.5);
-  text-align: center;
+  text-align: left;
   font-size: 20px;
   font-family:Marker Felt, fantasy; 
 } 
 .bopForm{
+  position: absolute; 
   margin-left:80%;
   margin-top:2%;
-  background:  rgba(240, 33, 33, 0.8);
+  background:  rgba(241, 67, 67, 0.5);
   padding:5px;
   width:600px;
   grid-auto-rows: minmax(400px, auto);
-  position: relative; 
- }
+}
  .enter{
   font-size:25px;
   font-family:Marker Felt, fantasy ;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.beep{
+  background:yellow;
+  font-size: 20px;
+  }
+.bop1{
+  background:plum;
+  font-size:20px;
+  text-align: left;
+}
+.neighbor {
+  background:orange;
+  font-size:20px;
+}
+.center{
+  text-align: center;
+}
+ul{
+  font-size: 20px;
+  font-family:Marker Felt, fantasy ;
+}
 
 @media screen and (min-width: 768px) {
   .column {

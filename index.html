@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Beep Bop Game!</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+  <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!--Header-->
+      <div class="col-md-4">
+        <h1><img src="img/mr.png" alt="photo of words" class="mr"></h1>
+        <h2><img src="img/bop.png" alt="photo of word" class="bop"></h2>
+        <img src="img/rodger.png" alt="photo of mr rodgers" class="rodger">
+
+        <!-- //!--Form----->
+        <h2><img src="img/play.png" id="play"></h2>
+
+        <form class="bopForm">
+          <div>
+            <strong><u><span class="enter">Enter number here:</span></u></strong>
+            <input type="number" min="1" id="input-number" placeholder="Positive number only!">
+            <button class="btn btn-success" type="submit">Let's Play!</button>
+            <button id="reload" class="btn btn-danger" type="click">Reset</button>
+        </form>
+        <!--Results-->
+        <div class="results">
+          <ul id="list">
+          </ul>
+        </div>
+      </div>
+      <!---About Box-- -->
+      <div class="col-md-6 about">
+        <p>
+          <h3><u>Created By:</u></h3>
+        </p>
+        <h4>Celeste Field</h4>
+        <h4><a href="https://github.com/fieldceleste"><u>Github Page</u></a></h4>
+        <h3><u>Subject</u></h3>
+        <h4>Arrays and Looping</h4>
+      </div>
+      <!--Rules Box-->
+      <div class="rules">
+        <h3 class="center">Rules:</h3>
+        <p class="center">Beep Bop will count up to your number from <u>1</u> with the following exceptions:</p>
+        <br>
+        <ol>
+          <li>Numbers that contain 1 become <span class="beep">Beep</span></li>
+          <li>Numbers that contain 2 become <span class="bop1">Bop</span></li>
+          <li>Numbers divisible by 15 become <span class="neighbor">Won't you be my neighbor?</span></li>
+        </ol>
+      </div>
+      <img src="img/neighborhood.png" alt="photo of neighborhood" class="neighborhood">
+    </div>
+  </div>
+  </div>
+
+</body>
+
+</html>

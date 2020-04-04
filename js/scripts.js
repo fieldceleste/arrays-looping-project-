@@ -1,12 +1,12 @@
 // <!--Front End-user Logic-->
 
-$(document).ready(function() {
-  $(".bopForm").submit(function(event) {
+$(document).ready(function () {
+  $(".bopForm").submit(function (event) {
     event.preventDefault();
     $("ul#list").empty();
     var userInput = parseInt($("#input-number").val());
     var bopOutput = bopGame(userInput);
-    $("ul#list").text(bopOutput);
+    $("#list").append("<li>" + bopOutput + "</li>");
 
     $("#reload").click(function () {
       location.reload();
@@ -22,10 +22,10 @@ function bopGame(input) {
   $("ul#list").text("");
   for (var index = 0; index <= input; index++) {
     var wordInput = index.toString();
-   numberInput.push(wordInput)
+    numberInput.push(wordInput)
   };
 
-  numberInput.forEach(function(stringWord) {
+  numberInput.forEach(function (stringWord) {
     if ((stringWord.includes("3"))) {
       outputWord.push("Wont you be my neighbor?");
     } else if ((stringWord.includes("2"))) {
