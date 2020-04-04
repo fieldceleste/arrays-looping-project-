@@ -3,13 +3,14 @@
 $(document).ready(function() {
   $(".bopForm").submit(function(event) {
     event.preventDefault();
+    $("ul#list").empty();
     var userInput = parseInt($("#input-number").val());
-    var output = bopGame(userInput);
-    $("#list").text(output);
+    var bopOutput = bopGame(userInput);
+    $("ul#list").text(bopOutput);
 
-    // $("#reload").click(function () {
-    //   location.reload();
-    // });
+    $("#reload").click(function () {
+      location.reload();
+    });
   });
 });
 
@@ -20,19 +21,19 @@ function bopGame(input) {
   var outputWord = [];
   $("ul#list").text("");
   for (var index = 0; index <= input; index++) {
-    var numberInput = index.toString();
-   numberInput.push(stringInput)
+    var wordInput = index.toString();
+   numberInput.push(wordInput)
   };
 
-  numberInput.forEach(function(stringSentence) {
-    if ((stringSentence.includes("3"))) {
+  numberInput.forEach(function(stringWord) {
+    if ((stringWord.includes("3"))) {
       outputWord.push("Wont you be my neighbor?");
-    } else if ((stringSentence.includes("2"))) {
+    } else if ((stringWord.includes("2"))) {
       outputWord.push("boop");
-    } else if ((stringSentence.includes("1"))) {
+    } else if ((stringWord.includes("1"))) {
       outputWord.push("beep");
     } else {
-      outputWord.push(stringSentence);
+      outputWord.push(stringWord);
     }
   })
   return outputWord.join(", ")
