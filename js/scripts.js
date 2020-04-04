@@ -1,12 +1,12 @@
 // <!--Front End-user Logic-->
 
 $(document).ready(function () {
-  $(".bopForm").submit(function (event) {
+  $(".boopForm").submit(function (event) {
     event.preventDefault();
     $("ul#list").empty();
     var userInput = parseInt($("#input-number").val());
-    var bopOutput = bopGame(userInput);
-    $("#list").append("<li>" + bopOutput + "</li>");
+    var boopOutput = boopGame(userInput);
+    $("#list").append("<li>" + boopOutput + "</li>");
 
     $("#reload").click(function () {
       location.reload();
@@ -16,7 +16,7 @@ $(document).ready(function () {
 
 // <!--Business Logic--->
 
-function bopGame(input) {
+function boopGame(input) {
   var numberInput = [];
   var outputWord = [];
   $("ul#list").text("");
